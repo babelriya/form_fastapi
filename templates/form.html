@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demand Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel ="shortcut icon" href="#">
+  </head>
+  <body> 
+    <div class= "container">
+    <h1 class="text-center">Demand Form</h1>
+    <form action = "/Requirement" method ="POST">
+    <div class="mb-3">
+        <label for="BU" class="form-label">Business Unit</label>
+        <input type="text" class="form-control" id="BU" name= "BU" rows="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="App" class="form-label">Application</label>
+        <input class="form-control" id="App" name = "App" rows="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="CPU" class="form-label">Number of CPU</label>
+        <input class="form-control" id="CPU" name = "CPU" rows="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="Memory" class="form-label">RAM</label>
+        <input class="form-control" id="Memory" name = "Memory" rows="1" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="storage" class="form-label">Storage</label>
+        <input class="form-control" id="storage" name = "storage" rows="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="environment" class="form-label">Environment</label>
+        <select id="environment" name = "environment" required size="1" rows="1" required>
+          <option value="prod">Prod</option>
+          <option value="non-prod">Non-prod</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="capacity" class="form-label">Capacity</label>
+        <input type="date" class="form-control" id="capacity" name = "capacity" rows="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="cycleid" class="form-label">Transaction cycle ID</label>
+        <input class="form-control" id="cycleid" name = "cycleid" rows="1" required>
+      </div>
+      
+      <button type="submit" class= "btn btn-primary .mx-auto"> Submit </button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ </body>
+</html>
